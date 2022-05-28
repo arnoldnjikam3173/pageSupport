@@ -15,16 +15,16 @@ const Forum = () => {
     return (
         <React.Fragment>
             <div>
-                <Drawer className={classes.drawer}
+             {/*    <Drawer className={classes.drawer}
                     variant='permanent'
                     anchor='left'
-                >
+                > 
                     <div>
                         <Typography>
                             Forum
                         </Typography>
                     </div>
-                </Drawer>
+                </Drawer> */}
             </div>
 
         </React.Fragment>
