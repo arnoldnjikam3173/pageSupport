@@ -1,10 +1,365 @@
-.cards{
-    transition: 0.3s;
+html{
+    box-sizing: border-box;
+    
 }
-.cards:hover{
-    box-shadow: '0 8px 16px 0 #aaa';
-    transform: scale(1.030);
+*,*:before,*:after{
+    box-sizing: inherit;
+} 
+body{
+    box-sizing: border-box;
+    background-color: #eee;
+    
 }
+*,*:before,*:after{
+    box-sizing: inherit;
+} 
+body{
+    padding:0px;
+    margin: 0px;
+}
+
+/* @media screen max 767px  phone*/
+@media screen and (max-width: 1040px) {
+
+
+/* css header */
+
+.section-header{
+    background-image: linear-gradient(to right, rgba(65, 67, 96, 0.549), rgb(18, 5, 98));
+    height: 300px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div .title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    cursor: pointer;
+}
+div .inputSearch{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    width: 60%;
+    align-items: center;
+    
+    
+}
+div input{
+    flex-grow: 2;
+    align-self: stretch;
+    border-radius: 40px;
+    border: 1px solid rgb(56, 55, 55);
+}
+
+/* end --header */
+
+/* section-card */
+.section-cards{
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 2em;
+    display: flex;
+    row-gap: 70px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    transition: box-shadow 1s ease;
+    background-color: whitesmoke;
+}
+.card:hover{
+    box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.352);
+}
+.card-title{
+    font-size: 2em;
+    text-transform: capitalize;
+    padding-top: 1em;
+}
+.card-header{
+    background-color: rgba(86, 103, 179, 0.757);
+    border-radius: 50px;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.card-backButton{
+    color: white;
+}
+.card-description{
+    padding-top: 2em;
+}
+.card-link{
+    background-color: rgba(34, 42, 134, 0.757);
+    border-radius: 40px;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border: none;
+    margin-top: 7%;
+    padding: 4%;
+}
+
+
+/* end section-cards */
+}
+/* end --@media screen 767px phone */
+
+
+
+
+
+
+
+
+
+/* @media screen max 1023px tablette */
+/* @media screen and (min-width: 768px) and (max-width: 1023px) { */
+    
+
+    /* css header */
+    
+    /* .section-header{
+        background-image: linear-gradient(to right, rgba(65, 67, 96, 0.549), rgb(18, 5, 98));
+        height: 300px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    div .title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        font-size: 60px;
+        cursor: pointer;
+    }
+    div .inputSearch{
+        display: flex;
+        justify-content: center;
+        height: 20%;
+        width: 90%;
+        align-items: center;
+        
+        
+    }
+    div input{
+        flex-grow: 2;
+        align-self: stretch;
+        border-radius: 40px;
+        border: 1px solid rgb(56, 55, 55);
+    }
+     */
+    /* end --header */
+    
+    /* section-card */
+    /* .section-cards{
+        width: 80%;
+        margin: auto;
+        margin-top: 2%;
+        padding: 1em;
+        display: flex;
+        row-gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        
+    
+    }
+    
+    .card{
+        border: 1px solid #ddd;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        height: 330px;
+        transition: box-shadow 1s ease;
+        background-color: whitesmoke;
+    }
+    .card:hover{
+        box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.352);
+    }
+    .card-title{
+        font-size: 2em;
+        text-transform: capitalize;
+        padding-top: 1em;
+    }
+    .card-header{
+        background-color: rgba(86, 103, 179, 0.757);
+        border-radius: 50px;
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .card-backButton{
+        color: white;
+    }
+    .card-description{
+        flex-grow: 1;
+        padding-top: 2em;
+        text-align: center;
+    }
+    .card-link{
+        border: 2px solid rgba(86, 103, 179, 0.757);
+        padding-top: 1em;
+        border-radius: 7px;
+        align-self: stretch;
+        text-align: center;
+        transition: color 1s ease, background-color 1s;
+        font-size: 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family:  Geneva, Tahoma, sans-serif;
+        color: rgba(0, 0, 0, 0.797);
+        flex-grow: 0 ;
+    }
+    .icon-group{
+        display: none;
+    } */
+    /* end section-cards */
+    /* } */
+    /* end --@media screen 1023px tablette */
+
+
+
+
+    /* @media screen max 1024px ordinateur */
+@media screen and (min-width: 1041px) {
+    
+
+    /* css header */
+    
+    .section-header{
+        background-image: linear-gradient(to right, rgba(65, 67, 96, 0.549), rgb(18, 5, 98));
+        height: 300px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    div .title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        font-size: 60px;
+        cursor: pointer;
+    }
+    div .inputSearch{
+        display: flex;
+        justify-content: center;
+        height: 20%;
+        width: 60%;
+        align-items: center;
+        
+        
+    }
+    div input{
+        flex-grow: 2;
+        align-self: stretch;
+        border-radius: 30px;
+        border: 1px solid rgb(56, 55, 55);
+    }
+    
+    /* end --header */
+    
+    
+    /* section-card */
+    .section-cards{
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        padding: 1em;
+        display: flex;
+        row-gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+    
+    }
+    
+    .card{
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        width: 26%;
+        height: 350px;
+        transition: box-shadow 1s ease;
+        background-color: whitesmoke;
+    }
+    .card:hover{
+        box-shadow: 6px 6px 6px rgba(51, 51, 51, 0.352);
+    }
+    .card-title{
+        font-size: 2em;
+        text-transform: capitalize;
+        padding-top: 1em;
+    }
+    .card-header{
+        background-color: rgba(86, 103, 179, 0.757);
+        border-radius: 50px;
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 10px;
+        
+    }
+    .card-backButton{
+        color: white;
+    }
+    .card-description{
+        
+        padding-top: 2em;
+        text-align: center;
+        align-self: stretch;
+    }
+    .card-link{
+        background-color: rgba(34, 42, 134, 0.757);
+        border-radius: 40px;
+        font-size: 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        border: none;
+        margin-top: 10%;
+        padding: 4%;
+    }
+    
+    /* end section-cards */
+    }
+    /* end --@media screen 1024px */
+
+
+
+
 
 
 

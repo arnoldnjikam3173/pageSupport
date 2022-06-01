@@ -1,0 +1,153 @@
+html{
+    box-sizing: border-box;
+    
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+} 
+body{
+    box-sizing: border-box;
+    
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+} 
+body{
+    padding:0px;
+    margin: 0px;
+}
+
+
+.layout-forum{
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid red;
+    
+}
+.header{
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+.header-title{
+    align-self: flex-start;
+    padding-left: 8%;
+}
+.header-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+}
+
+.nav-link{
+    background-color: rgb(4, 170, 109);
+    box-sizing: border-box;
+    padding-bottom: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 6%;
+    justify-content: flex-start;
+    transition: box-shadow .3s;
+}
+.nav-link:hover{
+    box-shadow: 5px 8px 8px rgba(4, 170, 109, 0.352);
+}
+.a-forum{
+    padding-top: 0.6%;
+    text-decoration: none;
+    padding-left: 3%;
+    text-align: center;
+    color: rgb(221, 220, 220);
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a-forum:hover{
+    color: white;
+}
+.active{
+    color: white;
+    font-weight: 700;
+}
+button{
+    padding: 20px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+.sign-up, .sign-in{
+    background-color: rgb(4, 170, 109);
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sign-in{
+    background-color: rgb(223, 223, 226);
+    color: rgb(54, 54, 55);
+}
+.space-btn{
+    padding-right: 1%;
+}
+.space-btn2{
+    padding-right: 20%;
+}
+
+
+
+
+
+/* modal */
+.modalSignup-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+    }
+    .modalSignup-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+/* end header forum */
+
+
+
+.content-forum{
+    background-color: rgb(237, 240, 244);
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 5%;
+    justify-content: center;
+    
+    
+}
+.content-title{
+    margin-left: 15%;
+    font-weight: bolder;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: rgb(83, 83, 83);
+    
+}
+.content-body{
+    background-color: white;
+    border: 1px solid #ddd;
+    height: auto;
+    margin-left: 15%;
+    width: 80%;
+}
+
